@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       ">
+    <!--<bean id="myService" class="com.hy.service.impl.ServiceImpl"/>
+    <bean id="myPostProcessor" class="com.hy.handler.MyPostProcessor"/>
+    <bean id="handlerChain" class="com.hy.handler.HandlerChain" init-method="init0"/>
+    <bean id="handler1" class="com.hy.handler.impl.Handler1" init-method="init">
+        <property name="iService" ref="myService"/>
+    </bean>
+    <bean id="handler2" class="com.hy.handler.impl.Handler2"/>
+    <bean id="handler3" class="com.hy.handler.impl.Handler3"/>-->
+
+    <context:component-scan base-package="com.hy.handler"/>
+</beans>
